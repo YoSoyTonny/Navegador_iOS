@@ -13,7 +13,9 @@ class CalificacionesController : UIViewController, UITableViewDataSource, UITabl
 {
     var materias : [Materia] = []
     override func viewDidLoad() {
-        
+        materias.append(Materia(nombre: "Matemáticas", calificacionPrimerParcial: 7, calificacionSegundoParcial: 8, calificacionTercerParcial: 4, calificacionFinal: 7))
+        materias.append(Materia(nombre: "Español", calificacionPrimerParcial: 9, calificacionSegundoParcial: 9, calificacionTercerParcial: 9, calificacionFinal: 9))
+        materias.append(Materia(nombre: "Historia", calificacionPrimerParcial: 6, calificacionSegundoParcial: 5, calificacionTercerParcial: 7, calificacionFinal: 6))
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -28,6 +30,14 @@ class CalificacionesController : UIViewController, UITableViewDataSource, UITabl
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMaterias")
         celda?.textLabel?.text = materias[indexPath.row].nombre
         return celda!
+    }
+    
+    @IBOutlet weak var tvCalificaciones: UITableView!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDetallesMateria" {
+            let destino = segue.destination as? DetalleMateriaController
+            destino?.materia = materias[tvCalificaciones.indexPathForSelectedRow!.row]
+        }
     }
     
 }

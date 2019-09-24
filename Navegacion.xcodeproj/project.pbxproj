@@ -16,6 +16,7 @@
 		3D917D3F23396A1B007615BA /* NavegacionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D917D3E23396A1B007615BA /* NavegacionUITests.swift */; };
 		3D917D4D233970DF007615BA /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D917D4C233970DF007615BA /* Materia.swift */; };
 		3D917D4F23397226007615BA /* calificacionesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D917D4E23397226007615BA /* calificacionesController.swift */; };
+		3DD1448D233AB4F800D22291 /* detalleMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD1448C233AB4F800D22291 /* detalleMateriaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3D917D4023396A1B007615BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D917D4C233970DF007615BA /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
 		3D917D4E23397226007615BA /* calificacionesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calificacionesController.swift; sourceTree = "<group>"; };
+		3DD1448C233AB4F800D22291 /* detalleMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detalleMateriaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3D917D2A23396A1B007615BA /* Info.plist */,
 				3D917D4C233970DF007615BA /* Materia.swift */,
 				3D917D4E23397226007615BA /* calificacionesController.swift */,
+				3DD1448C233AB4F800D22291 /* detalleMateriaController.swift */,
 			);
 			path = Navegacion;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				3D917D1F23396A16007615BA /* AppDelegate.swift in Sources */,
 				3D917D4F23397226007615BA /* calificacionesController.swift in Sources */,
 				3D917D4D233970DF007615BA /* Materia.swift in Sources */,
+				3DD1448D233AB4F800D22291 /* detalleMateriaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
